@@ -14,6 +14,8 @@ massive(process.env.CONNECTION_STRING)
 app.use(bodyParser.json())
 
 //endpoints
+app.get(`/api/houses`, ctrl.getProperties)
+app.get(`/api/postProperty`, ctrl.postProperty)
 
 
 //server port listening
